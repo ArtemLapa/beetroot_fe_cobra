@@ -1,0 +1,137 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+}
+section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.promo-container,
+.container-goal,
+.container-work-experience,
+.conrainer-hard-skills,
+.container-education,
+.container-interests,
+.contact-details-contaienr {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-info > h1 {
+  border-bottom: 5px solid #333;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+}
+
+.photo > img {
+  width: 100%;
+}
+.main-info {
+  max-width: 750px;
+  width: 100%;
+}
+.address {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.region {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.black-box {
+  height: 40px;
+  width: 180px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+}
+.black-box > span {
+  line-height: 40px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.container-goal > p {
+  width: 75%;
+}
+.container-work-experience:first-child {
+  padding-bottom: 40px;
+}
+.work-experience__content {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.place-job {
+  display: flex;
+  flex-direction: column;
+}
+.company {
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.position {
+  font-size: 18px;
+}
+.work-period {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#second-place {
+  justify-content: flex-end;
+}
+
+.skills {
+  width: 75%;
+}
+
+.education-info {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.place-education {
+  display: flex;
+  flex-direction: column;
+}
+
+.place-education > span:first-child {
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.container-interests > p {
+  width: 75%;
+}
+
+.contact-details-contaienr > ul {
+  width: 75%;
+}
