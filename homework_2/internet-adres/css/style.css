@@ -1,0 +1,6 @@
+label:active {
+  text-decoration: line-through;
+}
+input:checked {
+  text-decoration: line-through;
+}
