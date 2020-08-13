@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../assets/fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../assets/fonts/ProximaNova-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// fonts
+$regular: 'ProximaNova-Regular', serif;
+$light: 'ProximaNova-Light', serif;
+
+// colors
+$blue: #1275b9;
+$hover-blue: #2a69a6;
+$white: #ffffff;
+$black: #000000;
+$grey: #9d9d9d;
+
+// font-size
+$heading: 14px;
+$text: 14px;
