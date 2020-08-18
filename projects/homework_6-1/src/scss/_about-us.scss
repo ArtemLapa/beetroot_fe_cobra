@@ -1,0 +1,80 @@
+.about-us {
+  padding-top: 140px;
+  &__sub {
+    display: block;
+    text-align: center;
+    font-size: $minimum;
+    color: $darknes-gray;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  &__heading {
+    color: $blue;
+    font-size: $heading;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+  }
+  &__tagline {
+    max-width: 514px;
+    font-family: $pt-sans;
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: $tagline;
+    color: $text-grey;
+    letter-spacing: 1px;
+    margin: 0 auto 105px auto;
+  }
+  &__skills-list {
+    display: flex;
+  }
+  &__skills-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // max-width: 230px;
+    border: 1px solid $border-color;
+    // width: 100%;
+    flex-basis: 25%;
+    background-color: $grey;
+    text-align: center;
+    padding: 55px 30px 90px 30px;
+    max-height: 420px;
+    transition: background-color .2s ease;
+    transition: border-color .2s ease;
+    &:hover {
+      background-color: $blue;
+      border-color: $blue;
+      .about-us__skills-icon {
+        fill: $white;
+      }
+      .about-us__skills-heading {
+        color: $white;
+      }
+      .about-us__skills-text {
+        color: $white;
+      }
+    }
+  }
+  &__skills-icon-wrapepr {
+    margin-bottom: 54px;
+  }
+  &__skills-icon {
+    transition: fill .3s ease;
+  }
+  &__skills-heading {
+    font-size: $medium;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    transition: color .3s ease;
+  }
+  &__skills-text {
+    font-size: $card-text;
+    color: $text-grey;
+    font-family: $pt-sans;
+    transition: color .3s ease;
+  }
+}
