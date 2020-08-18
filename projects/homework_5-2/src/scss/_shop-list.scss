@@ -10,7 +10,6 @@ body {
     height: 100%;
     text-align: center;
     padding: 24px 0;
-    margin-bottom: 40px;
   }
   &__heading {
     font-size: 32px;
@@ -24,6 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
   }
   &__form {
     max-width: 800px;
@@ -46,6 +46,9 @@ body {
       background-color: $hover-line;
       border-top: 3px solid $white;
       border-bottom: 3px solid $white;
+    }
+    &:active {
+      background-color: $background-grey-active;
     }
   }
   &__checkbox {
@@ -81,6 +84,7 @@ body {
     margin-left: 17px;
     height: 100%;
     width: 100%;
+    cursor: pointer;
   }
   &__fake-box {
     width: 25px;
@@ -124,11 +128,15 @@ body {
     padding: 24px 0 25px 0;
     border: none;
     transition: background-color .3s ease;
+    cursor: pointer;
     &:hover {
       background-color: #45494e;
     }
     &:focus {
       background-color: #383b3e;
+    }
+    &:active {
+      background-color: #687382;
     }
   }
 }
