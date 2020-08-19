@@ -1,0 +1,77 @@
+.weather {
+  &__heading {
+    font-size: $heading;
+    margin: 32px 0 35px;
+  }
+  &__cities-list {
+    text-align: center;
+    font-size: 0;
+    border: 2px solid $white;
+    margin-bottom: 30px;
+    background-color: $white;
+    &:hover {
+      .weather__cities {
+        opacity: 0.5;
+      }
+    }
+    .weather__cities:hover {
+      opacity: 1;
+    }
+  }
+  &__cities {
+    display: inline-block;
+    font-size: $main-text;
+    font-family: $lucida-sans;
+    width: 25%;
+    padding-top: 32px;
+    padding-bottom: 27px;
+    max-height: 148px;
+    border: 2px solid $white;
+    cursor: pointer;
+    &:nth-child(1) {
+      width: 50%;
+      background-color: $main-blue;
+    }
+    &:nth-child(2) {
+      background-color: $medium-turquoise;
+    }
+    &:nth-child(3) {
+      background-color: $violet-blue;
+    }
+    &:nth-child(4) {
+      background-color: $red;
+    }
+    &:nth-child(5) {
+      background-color: $orange;
+    }
+    &:nth-child(6) {
+      background-color: $yellow;
+    }
+    &:nth-child(7) {
+      background-color: $dark-sea-green;
+    }
+    &:nth-child(8) {
+      background-color: $cadet-blue;
+    }
+    &:nth-child(9) {
+      width: 50%;
+      background-color: $hopbush;
+    }
+    &:nth-child(10) {
+      background-color: $eucalyptus;
+    }
+    &:nth-child(11) {
+      width: 100%;
+      background-color: $scampi;
+    }
+  }
+  &__cities-name {
+    font-size: $main-text;
+  }
+  &__weather-condition {
+    opacity: 0.6;
+  }
+  &__weather__wish {
+    font-size: $main-text;
+  }
+}

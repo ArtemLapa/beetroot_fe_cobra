@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Lucida Sans Unicode';
+  src: url('../assets/fonts/Lucida Sans Unicode.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lucida Grande';
+  src: url('../assets/fonts/Lucida Grande.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// fonts
+$lucida-sans: 'Lucida Sans Unicode', serif;
+$lucida-grande: 'Lucida Grande', serif;
+
+// font-size
+$main-text: 20px;
+$heading: 24px;
+
+// colors
+$white: #FFFFFF;
+$main-blue: #3399CC;
+$border-blue: #2B81AC;
+$medium-turquoise: #33CCCC;
+$violet-blue: #996699;
+$red: #C24747;
+$orange: #E2674A;
+$yellow: #FFCC66;
+$dark-sea-green: #99CC99;
+$cadet-blue: #669999;
+$hopbush: #CC6699;
+$eucalyptus: #339966;
+$scampi: #666699;
