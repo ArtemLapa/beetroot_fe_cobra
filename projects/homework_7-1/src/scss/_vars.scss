@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@font-face {
+  font-family: 'Miso';
+  src: url('../assets/fonts/Miso.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Miso-Bold';
+  src: url('../assets/fonts/miso-bold.ttf') format('truetype');
+}
+
+// fonts
+$main-text: 'Lato', sans-serif;
+$miso: 'Miso', sans-serif;
+$miso-bold: 'Miso-Bold', sans-serif;
+
+
+// font-size
+$high: 70px;
+$medium: 20px;
+$small: 18px;
+
+// colors
+$white: #ffffff;
+$yellow: #fdde7e;
+$gold: #ffca28;
+$bronze: #ff7900;
+$silver: #bdbdbd;
+$black: #333333;
+$green: #02995b;

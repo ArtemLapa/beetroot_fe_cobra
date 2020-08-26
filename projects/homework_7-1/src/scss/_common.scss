@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  background-color: $yellow;
+  font-family: $main-text;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  // padding: 15px 0 15px;
+}

@@ -1,0 +1,47 @@
+.coffee {
+  padding-top: 80px;
+  &__container {
+
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-around;
+    padding: 27px 0 32px;
+    
+    max-width: 360px;
+    flex-basis: 33.3%;
+    min-height: 440px;
+    background-color: $white;
+  }
+  &__price {
+    font-family: $miso-bold;
+    color: $green;
+    font-size: $high;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  &__cup {
+    margin-bottom: 24px;
+  }
+  &__name {
+    font-size: 53px;
+    font-weight: 400;
+    color: $black;
+    font-family: $miso;
+    margin-bottom: 19px;
+  }
+  &__text {
+    font-size: 21px;
+    font-weight: 300;
+    color: $black;
+    max-width: 158px;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+}
