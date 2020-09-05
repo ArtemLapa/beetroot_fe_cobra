@@ -1,0 +1,76 @@
+.photo-blog {
+  padding-top: 90px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    flex-basis: 32%;
+    height: 541px;
+    margin-bottom: 20px;
+    background-color: $white;
+  }
+  &__link {
+    position: relative;
+    height: 100%;
+    display: block;
+  }
+  &__image-wrapper {
+    position: relative;
+    padding-bottom: 73%;
+  }
+  &__photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter .3s ease;
+    &:hover {
+      filter: grayscale(50%);
+    }
+  }
+  &__card-info {
+    padding: 28px 26px 0 28px;
+  }
+  &__date {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: $small;
+    color: $date-color;
+    margin-bottom: 21px;
+  }
+  &__text {
+    color: $card-text-dark;
+    text-transform: uppercase;
+    font-size: $medium;
+    font-weight: 700;
+    margin-bottom: 48px;
+  }
+  .photo-blog__item--large-card {
+    flex-basis: 66%;
+  }
+  .photo-blog__card-info--on-photo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $white;
+    margin: 0 0 40px 44px;
+    background-color: transparent;
+    padding: 0;
+    .photo-blog__date {
+      margin-bottom: 23px;
+      color: $white;
+    }
+    .photo-blog__text {
+      font-size: $large;
+      color: $white;
+      margin-bottom: 0;
+      max-width: 433px;
+    }
+  }
+}

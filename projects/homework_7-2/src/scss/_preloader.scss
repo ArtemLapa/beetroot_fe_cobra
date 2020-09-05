@@ -1,0 +1,15 @@
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 67px;
+  margin-bottom: 100px;
+  font-size: $small;
+  color: $loader-text;
+  text-transform: uppercase;
+  font-weight: 700;
+  &:before {
+    content: url(../img/pre-loader.svg);
+    padding-right: 13px;
+  }
+}

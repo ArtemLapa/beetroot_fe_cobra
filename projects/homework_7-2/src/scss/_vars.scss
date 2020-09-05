@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'HansKendrick-Regular';
+  src: url('../assets/fonts/HansKendrick-Regular.ttf') format('truetype');
+  // font-weight: normal;
+  // font-style: normal;
+}
+$main-font: 'HansKendrick-Regular', serif;
+// colors
+$white: #FFFFFF;
+$background: #E2E7EC;
+$date-color: #818181;
+$loader: #8996A3;
+$loader-text: #99A5B0;
+$card-text-dark: #1D1D1D;
+
+// font-size
+$small: 13px;
+$medium: 22px;
+$large: 30px;
