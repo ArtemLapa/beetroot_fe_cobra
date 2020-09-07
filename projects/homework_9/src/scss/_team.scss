@@ -1,0 +1,98 @@
+$style: "team";
+.#{$style} {
+  padding-top: 100px;
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $title-size;
+    font-weight: 700;
+    color: $title-color;
+    letter-spacing: 6px;
+    padding-bottom: 19px;
+    margin-bottom: 45px;
+    position: relative;
+    &::after {
+      content: '';
+      height: 5px;
+      width: 46px;
+      background-color: $rectangle;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: $sub-title;
+    color: $title-color;
+    max-width: 561px;
+    margin: 0 auto;
+    font-weight: 400;
+    margin-bottom: 58px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__photo-wrapper {
+    margin-bottom: 21px;
+    position: relative;
+    &:hover {
+      .team__social-list {
+        display: flex;
+      }
+    }
+  }
+  &__social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $hover-card;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+  }
+  &__social-item {
+    $size: 43px;
+    width: $size;
+    height: $size;
+    background-color: rgba($white, 0.3);
+    margin-right: 3px;
+    transition: background-color .3s ease;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: rgba($white, 0.2);
+    }
+  }
+  &__social-link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 24px;
+      color: $white;
+    }
+  }
+  &__name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $card-color-text;
+  }
+  &__name {
+    font-size: $card-name;
+    font-weight: 700;
+  }
+  &__position {
+    font-size: $position;
+    font-weight: 300;
+  }
+}
