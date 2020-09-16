@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'MuseoSansRounded';
+  src: url('../assets/fonts/MuseoSansRounded-100.ttf') format('truetype');
+}
+// fonts
+$main-font: 'MuseoSansRounded', cursive;
+
+// font-sizes
+$prod-name: 24px;
+$prod-desc: 14px;
+
+// color
+$white: #FFFFFF;
+$card-bc: #111A28;
+$blue-circle: #1F273F;
+$red-circle: #ED3333;
+$mint-circle: #29E3EA;
+$border-circle: #7B8088;
+$bc-btn: #4C525A;
+$font-color: #E1E1E1;
+$selects-color: #ADAFB3;
+$select-border: #4F5560;
+$select-arrows: #454B54;

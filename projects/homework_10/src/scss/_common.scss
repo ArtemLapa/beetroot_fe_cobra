@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+select {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 686px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $main-font;
+  font-weight: 100;
+  color: $font-color;
+  background-image: url("../img/dots-bc.png"), url("../img/blue-dots-bc.png"), url("../img/bc3.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100%, 100%, 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
