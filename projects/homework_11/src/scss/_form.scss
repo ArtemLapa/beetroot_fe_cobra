@@ -1,4 +1,4 @@
-$style: "form";
+$style: "form-modal";
 .#{$style} {
   &__form-wrapper {
     display: flex;
@@ -51,11 +51,11 @@ $style: "form";
   }
   &__username {
     display: block;
-    opacity: 0.4;
     width: 100%;
     height: 42px;
-    background-color: transparent;
-    border: 2px solid $G10;
+    background: none;
+    border: 2px solid;
+    border-color: rgba($G10, 0.4);
     outline: none;
     padding-left: 10px;
     color: $G10;
@@ -63,7 +63,6 @@ $style: "form";
     margin-bottom: 17px;
     transition: all .3s ease;
     &:focus {
-      opacity: 1;
       border-color: $G100;
     }
   }
@@ -74,11 +73,11 @@ $style: "form";
   }
   &__password {
     display: block;
-    opacity: 0.4;
     width: 100%;
     height: 42px;
-    background-color: transparent;
-    border: 2px solid $G10;
+    background: none;
+    border: 2px solid;
+    border-color: rgba($G10, 0.4);
     outline: none;
     padding-left: 10px;
     color: $G10;
@@ -86,7 +85,6 @@ $style: "form";
     margin-bottom: 19px;
     transition: all .3s ease;
     &:focus {
-      opacity: 1;
       border-color: $G100;
     }
   }
