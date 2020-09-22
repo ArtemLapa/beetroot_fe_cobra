@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+select {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 431px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $main-font;
+  color: $W20;
+  background-color: $G10;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
