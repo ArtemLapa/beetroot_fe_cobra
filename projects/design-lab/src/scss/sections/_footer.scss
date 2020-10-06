@@ -1,0 +1,15 @@
+$style: "footer";
+.#{$style} {
+  padding-bottom: 30px;
+  &__copyright-wrapper {
+    @include flex(center, center);
+  }
+  &__logo-link {
+    margin-right: 25px;
+  }
+  &__copyright-text {
+    font-weight: 400;
+    font-size: $copyright;
+    color: $N100;
+  }
+}

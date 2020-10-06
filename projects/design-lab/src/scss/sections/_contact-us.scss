@@ -1,0 +1,38 @@
+$style: "border-section";
+.#{$style} {
+  &--contact-us {
+    padding: 138px 0 77px 0;
+    @media screen and (max-width: $screen-tablet) {
+      padding: 90px 0 67px;
+    }
+
+  }
+  &__content-wrapper {
+    &--contact-us {
+      padding: 77px 174px 50px 178px;
+    }
+    @media screen and (max-width: $screen-tablet) {
+      padding: 77px 74px 50px;
+    }
+    @media screen and (max-width: $screen-tablet-small) {
+      padding: 77px 30px 50px;
+    }
+    @media screen and (max-width: $screen-iphone-plus) {
+      padding: 50px 15px 30px;
+    }
+  }
+  &__title {
+    &--contact-us {
+      top: -6.5%;
+      @media screen and (max-width: $screen-iphone-plus) {
+        top: -4.5%;
+      }
+    }
+  }
+  &__text {
+    &--contact-us {
+      line-height: 1.62;
+      margin-bottom: 42px;
+    }
+  }
+}

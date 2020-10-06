@@ -1,0 +1,81 @@
+$style: "our-works";
+.#{$style} {
+  &__list {
+    @include flex(space-between, center, row, wrap);
+  }
+  &__items {
+    flex-basis: 30%;
+    max-width: 30%;
+    margin-bottom: 10px;
+    transition: opacity .2s ease;
+    &:hover,
+    &:active {
+      opacity: 0.8;
+    }
+    &:nth-last-of-type(-n+3) {
+      margin-bottom: 0;
+    }
+    &:nth-child(3n-1) {
+      flex-basis: 39%;
+      max-width: 39%;
+    }
+    @media screen and (max-width: $screen-desktop-large) {
+      margin-bottom: 5px;
+    }
+    @media screen and (max-width: $screen-netbook) {
+      flex-basis: 50%;
+      max-width: 50%;
+      margin-bottom: 5px;
+      &:nth-last-of-type(-n+3) {
+        margin-bottom: 5px;
+      }
+      &:nth-last-of-type(-n+2) {
+        margin-bottom: 0;
+      }
+      &:nth-child(3n-1) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+    }
+    @media screen and (max-width: $screen-tablet) {
+      flex-basis: 100%;
+      max-width: 100%;
+      &:nth-child(3n-1) {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+      &:nth-last-of-type(-n+2) {
+        margin-bottom: 5px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__link {
+    display: block;
+    position: relative;
+  }
+  &__img-wrapper {
+    @include padding-hack(43.5%, cover);
+    &--large {
+      padding-bottom: 33.4%;
+    }
+    @media screen and (max-width: $screen-netbook) {
+      padding-bottom: 33.4%;
+    }
+  }
+  &__title {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    font-size: $section-title;
+    color: $N0;
+    letter-spacing: 5.44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @media screen and (max-width: $screen-desktop-large) {
+      font-size: 24px;
+    }
+  }
+}

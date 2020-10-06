@@ -1,0 +1,36 @@
+$style: "border-section";
+.#{$style} {
+  &--what-we-do {
+    padding: 119px 0 114px 0;
+    @media screen and (max-width: $screen-tablet) {
+      padding: 90px 0 90px 0;
+    }
+    @media screen and (max-width: $screen-iphone-plus) {
+      padding: 60px 0 60px 0;
+    }
+  }
+  &__content-wrapper {
+    &--resize-padding {
+      padding: 125px 174px 92px 180px;
+    }
+    @media screen and (max-width: $screen-tablet) {
+      &--resize-padding {
+        padding: 100px 100px 92px 100px;
+      }
+    }
+    @media screen and (max-width: $screen-tablet-small) {
+      padding: 50px 20px 50px 20px;
+    }
+  }
+  &__title {
+    &--resize-height {
+      top: -2%;
+      @media screen and (max-width: $screen-tablet-small) {
+        top: -1.5%;
+      }
+      @media screen and (max-width: $screen-iphone-plus) {
+        top: -1.1%;
+      }
+    }
+  }
+}
