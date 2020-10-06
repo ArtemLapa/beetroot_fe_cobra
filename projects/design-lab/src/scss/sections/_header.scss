@@ -1,12 +1,8 @@
 $style: "header";
 .#{$style} {
   position: relative;
-  // @include flex(center, center);
-  background: url("../../img/hero-bg.jpg@1X.png") no-repeat center;
-  // background-image: url("../../img/hero-bg.jpg@1X.png");
-  // background-repeat: no-repeat;
+  background: url("../img/hero-bg.jpg@1X.png") no-repeat center;
   background-size: cover;
-  // padding: 285px 665px 115px;
   &__content-wrapper {
     @include flex(center, center, column);
     padding-top: 135px;
@@ -63,7 +59,7 @@ $style: "header";
       max-width: 340px;
     }
   }
-  &__scroll-img {
+  &__scroll-img-wrapper {
     cursor: pointer;
   }
 }
