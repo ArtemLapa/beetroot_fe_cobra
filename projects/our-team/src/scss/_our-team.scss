@@ -1,0 +1,218 @@
+$style: "our-team";
+.#{$style} {
+  @include flex(center, center, center);
+  height: 100vh;
+  width: 100%;
+  &__container {
+    width: 100%;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: $N50;
+      height: 560px;
+      top: 30%;
+      left: 50%;
+      bottom: 50%;
+      right: 50%;
+    }
+  }
+  &__title-wrapper {
+    @include flex(center, center, column);
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto 120px;
+  }
+  &__subtitle {
+    @include text($subtitle, 500, $N20);
+    line-height: 1.33;
+    letter-spacing: 0.36px;
+    margin-bottom: 18px;
+  }
+  &__title {
+    @include text($title, 900, $N50);
+    font-family: $headings;
+    line-height: 1.1;
+    margin-bottom: 45px;
+  }
+  &__decore-icon-wrapper {
+    @include flex(center, center);
+    width: 100%;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 45%;
+      background-color: $N50;
+      left: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 45%;
+      background-color: $N50;
+      right: 0;
+    }
+  }
+  &__decor-icon {
+    padding: 0 7px;
+  }
+  &__carousel-wrapper {
+    @include flex(space-between, center);
+    width: 100%;
+    position: relative;
+  }
+  &__carousel-controls-wrapper {
+    position: absolute;
+  }
+  &__photo-container {
+    @include flex(center, center);
+    max-width: 418px;
+    flex-basis: 418px;
+    padding: 14px;
+    border: 1px solid $N50;
+    position: relative;
+    z-index: 1;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      background: $N0;
+      // border: 1px solid #fff;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      background: $N0;
+      // border: 1px solid #fff;
+      transform: rotate(90deg);
+    }
+  }
+  &__photo-wrapper {
+    @include padding-hack(100%, contain);
+    width: 100%;
+    position: relative;
+    border: 1px solid $N50;
+    z-index: 10;
+  }
+  &__photo {
+    filter: brightness(1.1);
+  }
+  &__info-wrapper {
+    max-width: 418px;
+    flex-basis: 418px;
+    text-align: center;
+  }
+  &__name {
+    @include text($name, 900, $N30);
+    font-family: $headings;
+    line-height: 0.87;
+    letter-spacing: 0.72px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 25%;
+      background-color: $N50;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  &__position {
+    @include text($position, 400, $N30);
+    margin-bottom: 20px;
+  }
+  &__social-icons-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 135px;
+    max-width: 135px;
+    margin: 0 auto 20px;
+  }
+  &__social-icons-item {
+    border-radius: 50%;
+    border: 2px solid $N10;
+    width: 30px;
+    height: 30px;
+    transition: border-color .2s ease;
+    &:hover,
+    &:active {
+      border-color: #776363;
+      .our-team__social-link {
+        color: #776363;
+      }
+    }
+  }
+  &__social-link {
+    @include flex(center, center, center);
+    width: 100%;
+    height: 100%;
+    color: $N10;
+    transition: color .2s ease;
+  }
+  &__text {
+    @include text($text, 500, $N40);
+    line-height: 1.71;
+    padding-bottom: 22px;
+    position: relative;
+    margin-bottom: 52px;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 20px;
+      background-color: $N50;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 4;
+      border-right: 5px solid $N0;
+      border-left: 5px solid $N0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 50px;
+      background-color: $N50;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 2;
+    }
+  }
+  &__profile-link {
+    @include text($btn, 700, $N30);
+    font-family: $btn-font;
+    text-transform: uppercase;
+    line-height: 1.71;
+    border: 1px solid $N50;
+    padding: 6px 12px;
+    transition: border-color .2s ease;
+    transition: color .2s ease;
+    transition: box-shadow .2s ease;
+    &:hover,
+    &:active {
+      border-color: #90865d;
+      color: #6b3c3c;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px#e6daa7;
+    }
+  }
+}
