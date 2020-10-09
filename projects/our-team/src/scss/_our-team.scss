@@ -1,8 +1,8 @@
 $style: "our-team";
 .#{$style} {
   @include flex(center, center, center);
-  height: 100vh;
   width: 100%;
+  padding-top: 50px;
   &__container {
     width: 100%;
     position: relative;

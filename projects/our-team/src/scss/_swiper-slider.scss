@@ -1,0 +1,32 @@
+.swiper-pagination {
+  left: 0;
+  right: 0;
+  bottom: 8%;
+}
+.swiper-pagination-bullet {
+  margin-right: 9px;
+  background: $N50;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.swiper-pagination-bullet-active {
+  background: $N0;
+  border: 1px solid $N50;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 58%;
+  color: $N50;
+}
+// .swiper-button-prev,
+// .swiper-container-rtl .swiper-button-next {
+//   left: 20%;
+// }
+// .swiper-button-next,
+// .swiper-container-rtl .swiper-button-prev {
+//   right: 20%;
+// }
