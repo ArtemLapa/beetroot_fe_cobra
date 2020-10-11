@@ -1,0 +1,35 @@
+$style: "hotel";
+.#{$style} {
+  background-image: url("../img/spain@1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 230px 0 100px;
+  &__order-wrapper {
+    @include flex(flex-start, flex-start, column)
+  }
+  &__card-wrapper {
+    max-width: 540px;
+    max-height: 372px;
+    background-color: rgba($footer-bg, 0.9);
+    padding: 50px 32px;
+  }
+  &__country {
+    @include text($H200, 400, $light-grey);
+    display: inline-block;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+  }
+  &__hotel-country {
+    @include text($H200, 400, $light-grey);
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+  &__text {
+    @include text($H60, 400, $light-grey);
+    line-height: 1.63;
+    margin-bottom: 48px;
+  }
+}

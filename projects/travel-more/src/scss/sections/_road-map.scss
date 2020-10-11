@@ -1,0 +1,24 @@
+$style: "road-map";
+.#{$style} {
+  @include flex(center, center);
+  height: 25vh;
+  background-color: $dark-grey;
+  &__icons-wrapper {
+    max-width: 988px;
+    width: 100%;
+  }
+  &__icons-list {
+    @include flex(space-between, center);
+  }
+  &__icons-items {
+    @include flex(center, center, column);
+    max-width: 240px;
+    // height: 96px;
+  }
+  &__icon {
+    margin-bottom: 34px;
+  }
+  &__icon-text {
+    @include text($H360, 400, $light-grey);
+  }
+}

@@ -1,0 +1,110 @@
+$style: "header";
+.#{$style} {
+  height: 100vh;
+  &__header-wrapper {
+    @include flex(center, center, column);
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 91.5%;
+  }
+  &__main-title {
+    @include text($H480, 700, $white);
+    line-height: 0.54;
+    letter-spacing: 4.8px;
+    margin-bottom: 15px;
+    font-family: $josefin;
+  }
+  &__subtitle {
+    @include text($H220, 400, $white);
+    line-height: 1.18;
+    letter-spacing: 6.82px;
+    opacity: 0.8;
+    margin-bottom: 50px;
+  }
+  &__search-form {
+    max-width: 650px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 120px;
+    padding: 0 15px;
+  }
+  &__search-input {
+    @include text($H60, 400, $dark-grey);
+    width: 100%;
+    padding: 23px 25% 26px 26px;
+    &::placeholder {
+      @include text($H40, 400, $placeholder-color);
+      text-align: center;
+      line-height: 1.86;
+      letter-spacing: 2.8px;
+    }
+    &:focus {
+      box-shadow: 0 0 4px 3px blueviolet;
+      outline: none;
+      border: none;
+    }
+  }
+  &__submit-btn {
+    @include text($H40, 400, $white);
+    font-family: $aleo;
+    line-height: 1.86;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 19px;
+    top: 4px;
+    bottom: 0;
+    max-height: 62px;
+    height: 100%;
+    max-width: 150px;
+    width: 100%;
+    border: 2px solid $white;
+    background-color: $main-color;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__search-icon {
+    margin-left: 10px;
+  }
+  &__scroll-down-wrapper {
+    opacity: 0.8;
+  }
+  &__scroll-down {
+    @include text($H40, 400, $white);
+    line-height: 1.86;
+    letter-spacing: 2.8px;
+  }
+  &__nav-wrapper {
+    @include flex(space-between, center);
+    width: 100%;
+    max-height: 80px;
+    height: 100%;
+    background-color: $main-color;
+  }
+  &__navigation-menu {
+    @include flex(space-between, center);
+  }
+  &__home {
+    @include text($H240, 700, $white);
+    font-family: $josefin;
+    line-height: 1.08;
+    letter-spacing: 2.4px;
+  }
+  &__havigation-list {
+    @include flex(space-between, center);
+    flex-basis: 525px;
+    max-width: 525px;
+  }
+  &__navigation-links {
+    @include text($H40, 400, $white);
+    font-family: $aleo;
+    line-height: 1.86;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
+}

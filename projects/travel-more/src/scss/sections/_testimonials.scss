@@ -1,0 +1,34 @@
+$style: "testimonials";
+.#{$style} {
+  background-image: url("../../img/tourist-say@bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 120px 0 200px;
+  &__title {
+    @include text($H360, 400, $white);
+    font-family: $aleo;
+    line-height: 0.72;
+    text-align: center;
+    margin-bottom: 94px;
+  }
+  &__card {
+    @include flex(space-between, center);
+    max-height: 284px;
+    background-color: $dark-grey;
+  }
+  &__text-wrapper {
+    padding: 50px 60px;
+  }
+  &__name-autor {
+    @include text($H200, 400, $testimonials-color);
+    text-transform: uppercase;
+    line-height: 1.3;
+    padding-bottom: 33px;
+  }
+  &__text {
+    @include text($H60, 400, $light-grey);
+    line-height: 1.63;
+    letter-spacing: normal;
+  }
+}

@@ -1,0 +1,11 @@
+$style: "hotel";
+.#{$style} {
+  &--second {
+    background-image: url("../img/spain@2.jpg");
+  }
+  &__order-wrapper {
+    &--right {
+      align-items: flex-end;
+    }
+  }
+}
