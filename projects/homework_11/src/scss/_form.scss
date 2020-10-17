@@ -25,24 +25,33 @@ $style: "form-modal";
       z-index: 0;
     }
   }
+  &__section-title {
+    font-size: 0;
+    position: absolute;
+    left: -50%;
+    top: 0;
+  }
   &__form {
     margin-bottom: 33px;
     z-index: 1;
   }
   &__tabs-wrapper {
-    font-size: $tabs;
     margin-bottom: 55px;
   }
   &__inputs-wrapper {
     margin-bottom: 41px;
   }
-  &__sign-in {
+  &__tabs-controls {
     padding-bottom: 4px;
     margin-right: 25px;
-    border-bottom: 2px solid $R100;
-  }
-  &__join-us {
-    padding-bottom: 4px;
+    font-size: $tabs;
+    color: $W20;
+    &--active {
+      border-bottom: 2px solid $R100;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &__label-name {
     display: block;
@@ -57,7 +66,7 @@ $style: "form-modal";
     border: 2px solid;
     border-color: rgba($G10, 0.4);
     outline: none;
-    padding-left: 10px;
+    padding: 0 10px;
     color: $G10;
     font-size: 16px;
     margin-bottom: 17px;
@@ -79,7 +88,7 @@ $style: "form-modal";
     border: 2px solid;
     border-color: rgba($G10, 0.4);
     outline: none;
-    padding-left: 10px;
+    padding: 0 10px;
     color: $G10;
     font-size: 16px;
     margin-bottom: 19px;
