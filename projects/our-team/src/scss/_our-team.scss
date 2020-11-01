@@ -114,7 +114,6 @@ $style: "our-team";
     font-family: $headings;
     line-height: 0.87;
     letter-spacing: 0.72px;
-    margin-bottom: 30px;
     padding-bottom: 25px;
     position: relative;
     &:after {
@@ -131,6 +130,7 @@ $style: "our-team";
   }
   &__position {
     @include text($position, 400, $N30);
+    margin-top: 30px;
     margin-bottom: 20px;
   }
   &__social-icons-list {
