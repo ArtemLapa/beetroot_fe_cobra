@@ -1,0 +1,28 @@
+$style: "header";
+.#{$style} {
+  &__checkbox {
+    display: none;
+  }
+  &__menu-icon {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    &:before,
+    &:after {
+      width: 28px;
+      height: 2px;
+      background-color: #ffffff;
+      display: inline-block;
+    }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+    &:before {
+      top: -9px;
+    }
+  }
+}
