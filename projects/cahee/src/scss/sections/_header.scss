@@ -1,0 +1,96 @@
+$style: "header";
+.#{$style} {
+  height: 100vh;
+  background-image: url('../img/header@bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f9f8fb;
+  background-position: right;
+  padding-bottom: 70px;
+  @media screen and (max-width: $screen-desktop) {
+    padding-bottom: 50px;
+  }
+  &__container {
+    @include flex(space-between, stretch, column);
+    height: 100%;
+  }
+  &__navigation {
+    @include flex(space-between, center, center);
+    // margin-bottom: 20%;
+  }
+  &__logo {
+    @include text($H500, 400, $black-90);
+    text-transform: capitalize;
+    font-family: $pacifico;
+    // line-height: 0.5;
+  }
+  &__navigation-list {
+    @include flex(space-between, center, center);
+    flex-basis: 557px;
+    max-width: 557px;
+  }
+  &__navigation-items {
+    height: 100%;
+    padding-top: 10px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 3px;
+      width: 100%;
+      transition: background-color .3s ease;
+    }
+    &:hover {
+      &:before {
+        background-color: $red;
+      }
+    }
+    &--active {
+      &:before {
+        background-color: $red;
+      }
+    }
+  }
+  &__navigation-link {
+    box-sizing: inline-block;
+    height: 100%;
+    @include text($H60, 700, $black-90);
+    text-transform: uppercase;
+    // line-height: 1.56;
+  }
+  &__content-wrapper {
+    flex-basis: 368px;
+    max-width: 368px;
+  }
+  &__contetn-heading {
+    @include text($H600, 900, $black-90);
+    margin-bottom: 34px;
+  }
+  &__content-text {
+    @include text($H70, 300, $black-90);
+    margin-bottom: 31px;
+  }
+  &__contetn-link {
+    @include flex(center, center, center);
+    @include text($H200, 300, $white);
+    width: 200px;
+    height: 55px;
+    box-shadow: 0px 2px 5px 0 #000000;
+    background-color: #ff6033;
+    transition: background-color .3s ease;
+    &:hover,
+    &:active {
+      background-color: #ca3d15;
+    }
+  }
+  &__scroll-down {
+    max-width: 30px;
+    display: inline-block;
+    align-self: center;
+  }
+  &__scroll-img {
+    width: 24px;
+    height: 38px;
+  }
+}
