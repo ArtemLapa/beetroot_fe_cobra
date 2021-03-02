@@ -13,3 +13,4 @@
 - [Carousel](https://artemlapa.github.io/beetroot_fe_cobra/projects/our-team/app/)
 - [Design lab page](https://artemlapa.github.io/beetroot_fe_cobra/projects/design-lab/app/)
 - [Bhromaon page](https://artemlapa.github.io/beetroot_fe_cobra/projects/travel-more/app/)
+- [Discount Pool](https://artemlapa.github.io/beetroot_fe_cobra/projects/discount-pool/app/)
